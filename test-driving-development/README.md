@@ -1,19 +1,11 @@
-# console-java-gradle
+# test-driving-development
 
-# Developer Workspace
+# テスト駆動開発
 
-[![Contribute](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=5use7stej9bi9mxd)
+[[テスト駆動開発(Amazon)]](https://amzn.to/2EMJhNF)
 
-# Recipe
+[[テスト駆動開発(楽天)]](https://a.r10.to/hI6hCg)
 
-FROM [codenvy/gradle](https://hub.docker.com/r/codenvy/ubuntu_gradle/)
-
-# Commands
-
-| #       | Command           | 
-| :------------- |:------------- |
-| 1      | `cd ${current.project.path} && gradle build && java -jar build/libs/*.jar` |
-
-# App output
-
-App output is streamed into a console. Note that if your app expects user input, do not use command but execute jars in the terminal directly.
+- 写経用プロジェクト
+- Issueは本文のTODOとして使用
+- codenvyで動くようにセットアップ
