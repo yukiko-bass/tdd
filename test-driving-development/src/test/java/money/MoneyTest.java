@@ -4,6 +4,8 @@ package money;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertFalse;
+import static junit.framework.TestCase.assertTrue;
 
 public class MoneyTest {
 
@@ -17,5 +19,10 @@ public class MoneyTest {
         assertEquals(15, product.amount);
     }
 
+    @Test
+    public void testEquality() {
+        assertTrue(new Dollar(5).equals(new Dollar(5)));
+        assertFalse(new Dollar(5).equals(new Dollar(6)));
+    }
 
 }
